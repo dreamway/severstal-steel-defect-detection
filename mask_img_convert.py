@@ -55,7 +55,7 @@ def main(train_images_root, train_anno_file, mask_output_root):
     if not osp.exists(mask_output_root):
         os.mkdir(mask_output_root)
 
-    line_counter = 0
+    line_counter = 0 #debug
     with open(train_anno_file, 'r') as train_file:
         train_reader = csv.reader(train_file, delimiter=',')
         cur_img_fn = None
